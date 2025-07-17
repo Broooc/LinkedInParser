@@ -6,7 +6,7 @@ from auth import password, email, url
 from script import parse
 
 def get_src(url1):
-    s = Service(executable_path="venv/chromedriver_mac64/chromedriver", service_args=["--disable-build-check"])
+    s = Service(executable_path="chromedriver_mac64/chromedriver", service_args=["--disable-build-check"])
     options = webdriver.ChromeOptions()
     options.add_argument('--disable-blink-features=AutomationControlled')
     driver = webdriver.Chrome(service=s, options=options)
