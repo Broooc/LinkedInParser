@@ -36,12 +36,12 @@ def get_src(url1):
         driver.quit()
 
 
-print("Введіть кількість сторінок, які треба пропарсити:")
+print("Enter the number of pages to parse:")
 page_count = input()
 if int(page_count) == 0:
     print("Значення не підходить")
 else:
-    print("Введіть сторінку, з якої ви б хотіли почати пошук:")
+    print("Enter the page you would like to start your search from:")
     first_page = int(input())
     if first_page == 0:
         print("Значення не підходить")
