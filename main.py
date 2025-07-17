@@ -39,12 +39,12 @@ def get_src(url1):
 print("Enter the number of pages to parse:")
 page_count = input()
 if int(page_count) == 0:
-    print("Значення не підходить")
+    print("The value is not suitable")
 else:
     print("Enter the page you would like to start your search from:")
     first_page = int(input())
-    if first_page == 0:
-        print("Значення не підходить")
+    if first_page == 0 or int(page_count) < int(first_page):
+        print("The value is not suitable")
     else:
         url_list = []
         for i in range(int(first_page), int(page_count)+int(first_page)):
